@@ -64,18 +64,29 @@ This system manages:
 
 
 Employee-Management-System/
+
 │
 ├── frontend/ (Angular)
+
 │ ├── attendance/
+
 │ ├── payroll/
+
 │ ├── leave/
+
 │ ├── department/
+
 │ └── employee/
+
 │
 ├── backend/ (.NET API)
+
 │ ├── Controllers/
+
 │ ├── Models/
+
 │ ├── Data/
+
 │ └── appsettings.json
 
 
@@ -95,7 +106,7 @@ Employee-Management-System/
 
 ## 2️⃣ Run Angular Frontend
 
-```bash
+
 cd frontend
 npm install
 ng serve
