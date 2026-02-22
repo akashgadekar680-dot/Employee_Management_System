@@ -1,0 +1,57 @@
+.bggreen{
+  background-color: #2db15d;   /* green button */
+  color: white;  background-color: #2db15d;   /* green button */
+  color: white;                /* text color */
+  border: none;                /* remove default border */
+  border-radius: 4px;          /* rounded corners */
+  padding: 8px 16px;           /* space inside button */
+  font-size: 14px;             /* text size */
+  font-weight: 500;            /* semi-bold text */
+  cursor: pointer;             /* pointer on hover */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  display: inline-block;       /* ensures margin auto works if wrapped */
+  margin: 0 auto;              /* centers button horizontally inside a block container */
+color: white;
+}
+ 
+.div{
+    display: flex;
+  gap: 0.5rem;
+}
+.full{
+    width: 50%;
+}
+.full-width{
+    width: 100%;
+}
+.flexgap{
+    display: flex;
+  gap: 8px;
+}
+.gap{
+  width: 41.6667%;}
+.gender{ 
+   width: 58.3333%;
+}
+.example-full-width{
+   width: 100%;
+}
+.example-full{
+ width: 50%;
+}
+.fillly{
+    display: flex;
+  gap: 8px;
+}
+.invalid-bg {
+  background-color: #E5E7EB; /* gray-200 */
+}
+
+.valid-bg {
+  background-color: #22C55E; /* green-500 */
+}
+
+.midd{
+text-align: center;
+}
+

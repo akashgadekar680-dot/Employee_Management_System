@@ -1,0 +1,12 @@
+<div class="emp">
+    <div class="list"> 
+        <h2 class="emplis"> Employee List</h2>
+            <button class="bggreenss" (click)="add()">Add</button>
+    </div>
+    <app-table 
+    [data]="employeeList"
+    [displayedColumns]="showCols" 
+    (onEdit)="edit($event)"
+    (onDelete)="delete($event)"
+    ></app-table>
+</div>

@@ -1,0 +1,27 @@
+.bgblue{
+  background-color: rgb(61, 133, 250);
+  color: white;              /* text color */
+  border: none;              /* remove default border */
+  border-radius: 4px;        /* rounded corners */
+  padding: 8px 16px;         /* space inside button */
+  font-size: 14px;           /* text size */
+  font-weight: 500;          /* semi-bold text */
+  cursor: pointer;           /* pointer on hover */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}  
+.bgred {
+  background-color: rgb(214, 69, 69); 
+  color: white;              /* text color */
+  border: none;              /* remove default border */
+  border-radius: 4px;        /* rounded corners */
+  padding: 8px 16px;         /* space inside button */
+  font-size: 14px;           /* text size */
+  font-weight: 500;          /* semi-bold text */
+  cursor: pointer;           /* pointer on hover */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+.flex{
+  padding: 0.5rem !important;  
+gap: 0.5rem; /* 8px */
+
+}

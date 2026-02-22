@@ -1,0 +1,70 @@
+/* Hero Section */
+.hero {
+  height: 80vh;
+  background: url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d')
+              no-repeat center center/cover;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 40px;
+  text-align: center;
+  color: white;
+  border-radius: 10px;
+}
+
+.overlay h1 {
+  font-size: 45px;
+  margin-bottom: 10px;
+}
+
+.overlay p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.overlay button {
+  padding: 10px 25px;
+  border: none;
+  background: #4CAF50;
+  color: white;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.overlay button:hover {
+  background: #388E3C;
+}
+
+/* Feature Section */
+.features {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 50px;
+  background: #f4f4f4;
+}
+
+.feature-card {
+  background: white;
+  padding: 25px;
+  width: 250px;
+  text-align: center;
+  border-radius: 10px;
+  transition: 0.3s;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.feature-card:hover {
+  transform: translateY(-10px);
+}
+
+.feature-card img {
+  width: 80px;
+  margin-bottom: 15px;
+}

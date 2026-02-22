@@ -1,0 +1,126 @@
+<header>
+  <mat-toolbar color="primary" class="toolbar">
+
+    <ng-container *ngIf="authService.isLoggedIn">
+      <button
+        mat-icon-button
+        class="menu-button"
+        (click)="drawer.toggle()">
+        <mat-icon>menu</mat-icon>
+      </button>
+    </ng-container>
+
+    <span class="title">Employee Management System</span>
+
+    <span class="spacer"></span>
+
+    <ng-container *ngIf="authService.isLoggedIn; else loginButton">
+      <button mat-icon-button (click)="onLogout()">
+        <mat-icon>logout</mat-icon>
+      </button>
+    </ng-container>
+
+    <ng-template #loginButton>
+      <button mat-button routerLink="/login">Login</button>
+    </ng-template>
+
+  </mat-toolbar>
+</header>
+
+
+<mat-drawer-container class="drawer-container">
+
+  <mat-drawer
+    #drawer
+    class="drawer"
+    mode="side"
+    [opened]="authService.isLoggedIn">
+
+    <div class="my-container">
+
+      <!-- EMPLOYEE VIEW -->
+      <ng-container *ngIf="authService.isEmployee; else adminLinks">
+
+        <a routerLink="/employee-dashboard"
+           routerLinkActive="active-link">
+          Dashboard
+        </a>
+
+        <a routerLink="/leave"
+           routerLinkActive="active-link">
+          My Leave
+        </a>
+
+        <a routerLink="/attendance"
+           routerLinkActive="active-link">
+          My Attendance
+        </a>
+
+        <a routerLink="/payroll"
+           routerLinkActive="active-link">
+          My Payroll
+        </a>
+
+      </ng-container>
+
+      <!-- ADMIN VIEW -->
+      <ng-template #adminLinks>
+
+        <!-- MAIN DASHBOARD -->
+        <a routerLink="/dashboard"
+           routerLinkActive="active-link"
+           [routerLinkActiveOptions]="{ exact: true }">
+          Dashboard
+        </a>
+
+        <div class="menu-section-title">
+          Management
+        </div>
+
+        <a routerLink="/departments"
+           routerLinkActive="active-link">
+          Departments
+        </a>
+
+        <a routerLink="/employees"
+           routerLinkActive="active-link">
+          Employees
+        </a>
+
+        <div class="menu-section-title">
+          HR Operations
+        </div>
+
+        <a routerLink="/leave"
+           routerLinkActive="active-link">
+          Leave Management
+        </a>
+
+        <a routerLink="/attendance"
+           routerLinkActive="active-link">
+          Attendance
+        </a>
+
+        <a routerLink="/payroll"
+           routerLinkActive="active-link">
+          Payroll
+        </a>
+
+      </ng-template>
+
+    </div>
+
+  </mat-drawer>
+
+  <mat-drawer-content>
+    <main class="main-content">
+      <router-outlet></router-outlet>
+    </main>
+  </mat-drawer-content>
+
+</mat-drawer-container>
+
+
+<footer class="footer">
+  © 2026 Employee Management System
+</footer>

@@ -1,0 +1,47 @@
+<div class="hero">
+  <div class="overlay">
+    <h1>Leave Management System</h1>
+    <p>Apply Leave | Approve Requests | Track Balance</p>
+    <button type="button" (click)="openCalendar()">Apply Leave</button>
+  </div>
+</div>
+
+<div class="features">
+
+  <div class="feature-card" (click)="openCalendar()">
+    <img src="https://cdn-icons-png.flaticon.com/512/747/747310.png">
+    <h3>Apply Leave</h3>
+    <p>Submit leave requests easily</p>
+  </div>
+
+  <div class="feature-card">
+    <img src="https://cdn-icons-png.flaticon.com/512/190/190411.png">
+    <h3>Approve Requests</h3>
+    <p>Manager approval system</p>
+  </div>
+
+  <div class="feature-card">
+    <img src="https://cdn-icons-png.flaticon.com/512/2921/2921222.png">
+    <h3>Track Leave Balance</h3>
+    <p>Monitor remaining leave days</p>
+  </div>
+
+</div>
+
+<!-- CALENDAR MODAL -->
+<div class="calendar-modal" *ngIf="showCalendar">
+  <div class="calendar-content">
+
+    <h2>📅 Apply Leave</h2>
+
+    <input type="date" [(ngModel)]="selectedDate">
+
+    <button type="button" (click)="submitLeave()">Submit</button>
+    <button type="button" class="close-btn" (click)="closeCalendar()">Cancel</button>
+
+    <p class="success-msg" *ngIf="successMessage">
+      ✅ Leave applied successfully!
+    </p>
+
+  </div>
+</div>

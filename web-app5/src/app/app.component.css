@@ -1,0 +1,69 @@
+/* Custom Title */
+.custom-title {
+  font-size: 2rem;              /* equivalent to text-3xl */
+  font-weight: bold;            /* equivalent to font-bold */
+  text-decoration: underline;   /* underline */
+  color: #2563eb;               /* Tailwind blue-600 */
+}
+
+/* Toolbar Styling */
+.toolbar {
+  background-color: #60a5fa;    /* Tailwind bg-blue-400 */
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+}
+
+/* Title Styling */
+.title {
+  margin-left: 20px;            
+  font-weight: 600;
+  font-size: 1.2rem;            
+}
+
+/* Spacer (for flex alignment) */
+.spacer {
+  flex: 1 1 auto;
+}
+
+/* Drawer Container */
+.drawer-container {
+  height: calc(100vh - 20px);
+  margin: 10px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Drawer Styling */
+.drawer {
+  width: 250px;
+  background-color: #e9e3e3;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Main Content Styling */
+.main-content {
+  min-height: 100vh;
+  background-color: rgb(211, 191, 191); /* light reddish tone */
+  padding: 18px;
+}
+
+/* Footer Styling */
+.footer {
+  background-color: #f3f3f3;
+  padding: 16px;
+  text-align: center;
+  border-top: 1px solid #ddd;
+}
+
+/* Flex Container */
+.my-container {
+  display: flex;                /* same as flex */
+  flex-direction: column;       /* same as flex-col */
+  align-items: center;          /* same as items-center */
+  gap: 1rem;                    /* same as gap-4 (16px) */
+  color: #1d4ed8;               /* Tailwind text-blue-700 */
+  padding: 1rem;                /* same as p-4 (16px) */
+}

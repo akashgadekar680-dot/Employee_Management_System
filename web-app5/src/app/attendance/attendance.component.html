@@ -1,0 +1,35 @@
+<div class="attendance-hero">
+  <div class="attendance-overlay">
+    <h1>Attendance Management</h1>
+    <p>Track Employee Daily Attendance</p>
+
+    <div class="attendance-buttons">
+      <button class="checkin-btn" (click)="checkIn()">Check In</button>
+      <button class="checkout-btn" (click)="checkOut()">Check Out</button>
+    </div>
+
+    <p class="status-msg" *ngIf="statusMessage">
+      {{ statusMessage }}
+    </p>
+  </div>
+</div>
+
+<!-- Summary Section -->
+<div class="attendance-summary">
+
+  <div class="summary-card present">
+    <h3>Present Days</h3>
+    <p>20</p>
+  </div>
+
+  <div class="summary-card absent">
+    <h3>Absent Days</h3>
+    <p>2</p>
+  </div>
+
+  <div class="summary-card leave">
+    <h3>Leaves Taken</h3>
+    <p>3</p>
+  </div>
+
+</div>

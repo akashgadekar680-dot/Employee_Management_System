@@ -1,0 +1,86 @@
+.payroll-hero {
+  text-align: center;
+  padding: 40px;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  color: white;
+}
+
+.payroll-container {
+  padding: 40px;
+}
+
+.summary-cards {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+.card {
+  flex: 1;
+  margin: 10px;
+  padding: 30px;
+  border-radius: 15px;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.earnings {
+  background: linear-gradient(45deg, #00c853, #64dd17);
+}
+
+.deductions {
+  background: linear-gradient(45deg, #d50000, #ff1744);
+}
+
+.net {
+  background: linear-gradient(45deg, #2962ff, #448aff);
+}
+
+.salary-breakdown {
+  background: #f5f7fa;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.salary-breakdown h2 {
+  margin-bottom: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #2a5298;
+  color: white;
+}
+
+.download-btn {
+  padding: 10px 20px;
+  background: #1e3c72;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.download-btn:hover {
+  background: #16325c;
+}

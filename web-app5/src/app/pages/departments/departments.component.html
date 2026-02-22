@@ -1,0 +1,68 @@
+<div class="department-container">
+
+  @if (!isFormOpen) {
+    <div class="header">
+      <h2 class="deptadd">Departments</h2>
+      <button class="bggreenss" (click)="isFormOpen = true">Add</button>
+    </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Id</th>
+          <th>Name</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        @for (item of departments; track item.id) {
+          <tr>
+            <td>{{ item.id }}</td>
+            <td>{{ item.name }}</td>
+            <td class="btn-dept">
+              <button class="bgblue" (click)="editDepartment(item)">Edit</button>
+              <button class="bgred" (click)="deleteDepartment(item.id)">Delete</button>
+            </td>
+          </tr>
+        }
+      </tbody>
+    </table>
+  } 
+  @else {
+    <div class="shadow-lg">
+      <form class="form">
+        <h1 class="deptadd">
+          @if (editId) {
+            Edit Department
+          } @else {
+            Add Department
+          }
+        </h1>
+
+        <mat-form-field class="w-full">
+          <mat-label>Name</mat-label>
+          <input matInput [(ngModel)]="departmentName" name="departmentName" />
+        </mat-form-field>
+
+        <div class="w-fulling">
+          @if (editId) {
+            <button 
+              type="button"
+              (click)="updateDepartment()"
+              class="bggreen">
+              Update
+            </button>
+          } @else {
+            <button 
+              type="button"
+              (click)="addDepartment()"
+              class="bggreen">
+              Add
+            </button>
+          }
+        </div>
+      </form>
+    </div>
+  }
+
+</div>
